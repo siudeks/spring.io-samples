@@ -33,8 +33,10 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+	compile("io.projectreactor:reactor-bus")
+	compile("com.fasterxml.jackson.core:jackson-databind")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
